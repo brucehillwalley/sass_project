@@ -1,1 +1,30 @@
-// main 
+// main
+
+//eklenecek satırlar var
+//? BASE-ABSTRACT
+@use "./abstracts/variables" as v;
+@use "./abstracts/mixin" as *;
+@use "./base/reset"; //as kullanmadan uygular
+
+//? COMPONENTS
+@use "./components/navbar";
+
+//? FONTS
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Mulish&family=Playfair+Display&family=Rampart+One&display=swap");
+
+body {
+  // background-color: variables.$mainColor;
+  background-color: v.$mainColor;
+}
+
+.container {
+  max-width: v.$maxWidth;
+  margin: auto;
+  padding: 1rem;
+}
+
+button,
+i {
+  cursor: pointer;
+}
