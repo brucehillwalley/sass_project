@@ -1,3 +1,5 @@
 # sass_project
-https://brucehillwalley.github.io/sass_project/project-inclass/index.html
+BEFORE
 https://brucehillwalley.github.io/sass_project/project-starter/index.html
+AFTER
+https://brucehillwalley.github.io/sass_project/project-inclass/index.html
