@@ -20,6 +20,34 @@
 }
 .header__links {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  list-style-type: none;
+  padding: 1rem 0;
+}
+.header__links--home, .header__links--disabled {
+  color: #202336;
+  border: none;
+  background-color: #ffffff;
+  font-family: "Inter";
+  font-size: 100;
+  font-weight: 1rem;
+  line-height: 19px;
+}
+.header__links--disabled {
+  color: #b8becd;
+  font-family: 600;
+}
+.header__links--login {
+  background: #03a9f4;
+  border: none;
+  color: #fff;
+}
+.header__links--register {
+  background: #03a9f4;
+  border: none;
+  color: #fff;
 }
 
 body {
