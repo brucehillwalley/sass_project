@@ -1,2 +1,39 @@
-// about
+//
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
 
+
+
+.about {
+  @include flex(center);
+  gap: 1rem;
+  margin: 3rem 56px;
+//   padding: 1rem;
+ &__img{
+    width: 50%;
+ }
+
+ &__text{
+    @include flex(flex-start,flex-start);
+    flex-direction: column;
+    gap: 0.5rem;
+    
+    
+    &--header{
+       @include setFont("Playfair Display", 700, 2rem, 45px);  
+    }
+
+    &--paragraph{
+        color: #7d7987;
+       @include setFont("Mulish", 300, 1rem, 30px);  
+
+    }
+
+    &--button{
+@include btn(1.6rem,00.3rem,$mainColor,$btnBorderColor)
+
+    }
+   
+
+ }
+}
